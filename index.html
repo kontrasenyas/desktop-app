@@ -4,19 +4,75 @@
     <meta charset="UTF-8">
     <title>Hello World!</title>
     <script>require('./capture.js')</script>
+    <script>require('./session.js')</script>
     <link rel="stylesheet" type="text/css" href="./capture.css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Hello Philippines!</h1>
-      <div>
-        <form>
-          Username: <input type="username" name="username">
-          Password: <input type="password" name="password">
-        </form>
+      <div class="container">
+
+        <div class="col-md-12">
+
+          <form>
+            <div class="form-row align-items-center">
+<!--               <div class="col-auto">
+                <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">@</div>
+                  </div>
+                  <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                </div>
+              </div>
+              <div class="col-auto">
+                <label class="sr-only" for="inlineFormInput">Password</label>
+                <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Password">
+              </div>              
+              <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-2">Submit</button>
+              </div> -->
+              <span>Hi, Joseph Alcantara | <a href="#">Sign Out</a></span>
+            </div>
+          </form>
+
+
+
+          <div class="form-group">
+            <div id="photos" class="photosContainer"></div>
+          </div>
+
+          <div class="col-md-12">
+            
+              <div class="form-row">
+                <div class="col">
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Input Tasks</label> | <a href="">View</a>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Task Done for Today</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">                
+                <div class="col">
+                  <button class="btn btn-success" id="btnSession">Start</button>
+                </div>
+                <div class="col">
+                  <span>Timer and Total time</span>
+                </div>
+              </div>
+
+          </div>
+        </div>        
       </div>
 
-      <div class="container">
-        <div id="photos" class="photosContainer"></div>
+      <div class="">
+        
       </div>
 
     <script>
