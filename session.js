@@ -2,9 +2,9 @@ const electron = require('electron')
 const { ipcRenderer: ipc } = electron
 
 window.addEventListener('DOMContentLoaded', _ => {
-  const recordEl = document.getElementById('btnSession')
+  const sessionEl = document.getElementById('btnSession')
 
-  recordEl.addEventListener('click', _ => {
+  sessionEl.addEventListener('click', _ => {
       ipc.send('start-session')
   })  
 
