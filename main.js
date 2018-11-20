@@ -1,6 +1,7 @@
 const {app, BrowserWindow, globalShortcut, ipcMain: ipc, Menu} = require('electron')
 
 const images = require('./images')
+const mysql = require('./connection')
 
 let mainWindow
 
@@ -37,6 +38,8 @@ function createWindow () {
   })
 
   mainWindow.openDevTools()
+
+  mysql.connect()
 
   globalShortcut.register('Ctrl+Alt+D', _ => {
     images.mkdir(images.getPictureDir(app))
