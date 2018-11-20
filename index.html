@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <script>require('./capture.js')</script>
+    <link rel="stylesheet" type="text/css" href="./capture.css">
+  </head>
+  <body>
+    <h1>Hello Philippines!</h1>
+      <div>
+        <form>
+          Username: <input type="username" name="username">
+          Password: <input type="password" name="password">
+        </form>
+      </div>
+
+      <div class="container">
+        <div id="photos" class="photosContainer"></div>
+      </div>
+
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+  </body>
+</html>
